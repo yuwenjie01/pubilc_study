@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>点击显示一句话</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #message {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>点击按钮显示一句话</h1>
+    <button onclick="showMessage()">点击我</button>
+    <p id="message"></p>
+
+    <script>
+        function showMessage() {
+            // 设置要显示的消息
+            const message = "其实我连你的问卷都不会看！还敢有意见";
+            // 获取段落元素并设置其文本内容
+            document.getElementById('message').innerText = message;
+        }
+    </script>
+</body>
+</html>
